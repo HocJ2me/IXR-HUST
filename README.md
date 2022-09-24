@@ -4,7 +4,7 @@ Dự án "NGHIÊN CỨU CHUYỂN ĐỔI XE THU GOM RÁC ĐẨY TAY SANG XE ĐI�
   
 ### Mục lục
 
-- [Nội dung chính]()
+- [Nội dung chính](#Mục-lục)
     - [Mục lục](#Mục-lục)
   - [Thiết kế của hệ thống](#Thiết-kế-của-hệ-thống)
   - [Các thuật toán sử dụng](#Các-thuật-toán-sử-dụng)

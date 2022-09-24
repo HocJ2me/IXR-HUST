@@ -43,21 +43,26 @@ Giống như phần giải thích bên trên, để điều khiển cấp tín h
 Về thuật toán điều khiển dưới đây là thuật toán chính sử dụng:  
 
 <div align='center'>
-    <img src="./documents/images/thuat-toan-chung.png" width="65%">
+    <img src="./documents/images/thuat-toan-chung.png" width="45%">
 </div>
 
-Về thuật toán phát hiện sai số đi trên đường, tôi sử dụng một thư viện (Arduino MPU6050)[https://github.com/jarzebski/Arduino-MPU6050/tree/master/MPU6050_gyro_pitch_roll_yaw] để tìm gia các giá trị Pitch, Roll và yaw để xử lý góc lệch (tài liệu về Pitch, Roll, yaw bạn có thể đọc qua ở đây)[https://www.facebook.com/kythuathkvt/photos/-roll-li%E1%BB%87ng-yaw-h%C6%B0%E1%BB%9Bng-pitch-ch%C3%BAc-ng%C3%B3c-ailerons-c%C3%A1nh-li%E1%BB%87ng-rudder-c%C3%A1nh-l%C3%A1i-h%C6%B0%E1%BB%9Bng-/1847013308743569/]. Sau đó tôi đã sử dụng thông số Yaw để tính sai số cho hệ thống.  
-Về việc điều khiển lại động cơ, tôi sử dụng một hàm PID để thay đổi giá trị bật hoặc tắt ở 2 Relay nối với 2 IC Driver của động cơ (về PID, bạn có thể tham khảo ý tưởng thuật toán ở video này)[https://youtu.be/tKLFX3b88vM].  
+Về thuật toán phát hiện sai số đi trên đường, tôi sử dụng một thư viện [Arduino MPU6050](https://github.com/jarzebski/Arduino-MPU6050/tree/master/MPU6050_gyro_pitch_roll_yaw/) để tìm gia các giá trị Pitch, Roll và yaw để xử lý góc lệch [tài liệu về Pitch, Roll, yaw bạn có thể đọc qua ở đây](https://www.facebook.com/kythuathkvt/photos/-roll-li%E1%BB%87ng-yaw-h%C6%B0%E1%BB%9Bng-pitch-ch%C3%BAc-ng%C3%B3c-ailerons-c%C3%A1nh-li%E1%BB%87ng-rudder-c%C3%A1nh-l%C3%A1i-h%C6%B0%E1%BB%9Bng-/1847013308743569/). Sau đó tôi đã sử dụng thông số Yaw để tính sai số cho hệ thống.  
+Về việc điều khiển lại động cơ, tôi sử dụng một hàm PID để thay đổi giá trị bật hoặc tắt ở 2 Relay nối với 2 IC Driver của động cơ [về PID, bạn có thể tham khảo ý tưởng thuật toán ở video này](https://youtu.be/tKLFX3b88vM).  
 
 ## Tài liệu tham khảo
 Tôi có một kênh Youtube với 1, 2 video về dự án xe rác này, bạn có thể xem nó tại địa chỉ:
 - https://youtu.be/w2dDsoRLLZg  
 - https://youtu.be/0jubcFxC0cE  
+
+
 Một vài báo cáo và poster sưu tầm lại tôi có để lại tại thư mục Document của dự án, hi vọng có thể hỗ trợ các bạn.  
+
 Một vài link về các bài báo của nhóm: 
-- (VTV1)[https://vtv.vn/video/viet-nam-thuc-giac-20-7-2020-449595.htm?utm_source=zalo&utm_medium=zalo&utm_campaign=zalo&zarsrc=30]
-- (Hà Nội 1)[https://hanoitv.vn/nho-loi-bac-day--nhung-nha-sang-che-tre-vi-nguoi-lao-dong-v145611.html]
-- (Zings New)[https://zingnews.vn/video-sinh-vien-che-tao-xe-gom-rac-dien-tu-dong-van-hanh-post1109113.html]
-- (VTC videos)[https://vtc.vn/kham-pha-cong-nghe-xe-cho-rac-tu-lai-cua-sinh-vien-dai-hoc-bach-khoa-ha-noi-ar557743.html]
-- (Vietnamnet)[https://vietnamnet.vn/sinh-vien-ha-noi-che-tao-xe-gom-rac-thong-minh-tu-lai-theo-la-ban-V88317.html]
-- (Nguoiduatin)[https://www.nguoiduatin.vn/nhin-rac-bua-vay-ha-noi-sinh-vien-tung-chieu-che-tao-xe-gom-rac-tu-lai-a483704.html]
+- [VTV1](https://vtv.vn/video/viet-nam-thuc-giac-20-7-2020-449595.htm?utm_source=zalo&utm_medium=zalo&utm_campaign=zalo&zarsrc=30)
+- [VTV4](https://www.youtube.com/watch?v=CKj6IWaBsU4&t=981s)
+- [Hà Nội 1](https://hanoitv.vn/nho-loi-bac-day--nhung-nha-sang-che-tre-vi-nguoi-lao-dong-v145611.html)
+- [Zings New](https://zingnews.vn/video-sinh-vien-che-tao-xe-gom-rac-dien-tu-dong-van-hanh-post1109113.html)
+- [VTC videos](https://vtc.vn/kham-pha-cong-nghe-xe-cho-rac-tu-lai-cua-sinh-vien-dai-hoc-bach-khoa-ha-noi-ar557743.html)
+- [Vietnamnet](ttps://vietnamnet.vn/sinh-vien-ha-noi-che-tao-xe-gom-rac-thong-minh-tu-lai-theo-la-ban-V88317.html)
+- [Nguoiduatin](ttps://www.nguoiduatin.vn/nhin-rac-bua-vay-ha-noi-sinh-vien-tung-chieu-che-tao-xe-gom-rac-tu-lai-a483704.html)
+- [Báo Hà Nội mới](ttps://hanoimoi.com.vn/tin-tuc/Khoa-hoc/973516/sang-tao-cho-cuoc-song-them-xanh)
